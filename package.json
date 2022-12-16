@@ -1,15 +1,12 @@
 {
-  "name": "channel-helper",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "discord.js": "^14.7.1"
-  },
-  "type": "module"
+	"name": "channel-helper",
+	"version": "1.0.0",
+	"main": "src/index.js",
+	"scripts": {
+		"start": "node src/index.js"
+	},
+	"author": "Steellow",
+	"dependencies": {
+		"discord.js": "^14.7.1"
+	}
 }
