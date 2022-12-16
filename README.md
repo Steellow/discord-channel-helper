@@ -11,3 +11,8 @@ Me and [my bro](https://mtsknn.fi/) message a lot and like to seperate different
 You can change your user-specific emojis in [`emojiHelper.js`](./src/emojiHelper.js). I hardcoded these to make hosting easier, otherwise a persistent storage would be needed.
 
 Then add a `BOT_TOKEN` environment variable and you're good to go!
+
+## Might implement later
+
+- `/new [channelName]` command to quickly create new channels
+- Auto-archive (move to archive category) channels which haven't revieved messages for x days
