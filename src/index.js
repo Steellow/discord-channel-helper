@@ -1,5 +1,6 @@
 const { client } = require("./client");
 const { updateChannelNameEmoji } = require("./emojiHelper");
+const { server } = require("./server");
 
 client.on("messageCreate", async (msg) => {
 	const channelId = msg.channelId;
@@ -12,3 +13,6 @@ client.on("messageCreate", async (msg) => {
 		position: 0, // Must be below parent to work properly
 	});
 });
+
+// Required for fly.io hosting
+server.listen(process.env.PORT || 3000);
