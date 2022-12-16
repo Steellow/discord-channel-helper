@@ -7,7 +7,8 @@ client.on("messageCreate", async (msg) => {
 	const userName = msg.author.username;
 
 	msg.guild.channels.edit(channelId, {
-		position: 0,
 		name: updateChannelNameEmoji(channelName, userName),
+		parent: null,
+		position: 0, // Must be below parent to work properly
 	});
 });

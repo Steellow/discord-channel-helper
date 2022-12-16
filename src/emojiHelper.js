@@ -14,7 +14,6 @@ const updateChannelNameEmoji = (channelName, userName) => {
 	if (channelName.startsWith(userEmoji)) {
 		return channelName;
 	} else if (startsWithEmoji(channelName)) {
-		console.log("git");
 		return channelName.replace(emojiRegex, userEmoji);
 	} else {
 		return `${userEmoji}_${channelName}`;
