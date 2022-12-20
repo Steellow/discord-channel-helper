@@ -12,6 +12,13 @@ You can change your user-specific emojis in [`emojiHelper.js`](./src/emojiHelper
 
 Then add a `BOT_TOKEN` environment variable and you're good to go! I'm hosting this on [Fly.io](https://fly.io/), but should work everywhere.
 
+### Fly.io instance + local development
+
+If you're running this bot on Fly.io but still want to test/develop locally, you can:
+
+a) Create a new bot and token for your local development
+b) Stop the Fly instance with `fly scale count 0`, and later start with `fly scale count 1`
+
 ## Might implement later
 
 - `/new [channelName]` command to quickly create new channels
